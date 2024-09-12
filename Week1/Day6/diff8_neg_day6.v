@@ -4,10 +4,10 @@ module top_module (
     input [7:0] d,
     output [7:0] q
 );
-    
     always @(negedge clk)
-    if(reset)
-        q=d;
+        if(reset)
+            q=8'h34;
     else
-        q=0;
+        q=d;
+
 endmodule
